@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerador Seguro de Senhas | Fabiano Neras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <img src="unlock.svg" alt="Ícone de cadeado" class="icon" />
+            <h1>Gerador Seguro de Senhas</h1>
+            <p class="subtitle">Sua segurança digital começa aqui. Gere senhas fortes e únicas com apenas um clique.</p>
+        </header>
+
+        <section class="password-generator">
+            <label for="password" class="label-password">Senha Gerada</label>
+            <input type="text" id="password" readonly class="password-field" />
+
+            <div class="controls">
+                <div class="length-control">
+                    <button id="decrease" aria-label="Diminuir tamanho">−</button>
+                    <span id="length-value">12</span>
+                    <button id="increase" aria-label="Aumentar tamanho">+</button>
+                </div>
+
+                <div class="options">
+                    <label><input type="checkbox" id="uppercase" checked /> Letras Maiúsculas</label>
+                    <label><input type="checkbox" id="lowercase" /> Letras Minúsculas</label>
+                    <label><input type="checkbox" id="numbers" /> Números</label>
+                    <label><input type="checkbox" id="symbols" /> Símbolos</label>
+                </div>
+
+                <div class="strength-meter">
+                    <div id="strength-bar"></div>
+                    <div class="strength-labels">
+                        <span>Fraca</span>
+                        <span>Média</span>
+                        <span>Forte</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Fabiano Neras — Projeto autoral</p>
+        </footer>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
